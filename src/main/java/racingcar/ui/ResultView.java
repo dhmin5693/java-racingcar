@@ -14,10 +14,8 @@ public class ResultView {
         System.out.println(StringResources.GAME_RESULT);
     }
 
-    public static void printSetResult(RacingData racingData, List<Car> racingCars) {
-        for (int i = 0; i < racingData.getNumberOfCars(); i++) {
-            printCarStatus(racingCars.get(i));
-        }
+    public static void printSetResult(List<Car> racingCars) {
+        racingCars.forEach(ResultView::printCarStatus);
     }
 
     public static void printCarStatus(Car car) {

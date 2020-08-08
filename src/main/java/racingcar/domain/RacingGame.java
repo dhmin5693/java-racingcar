@@ -27,7 +27,7 @@ public class RacingGame {
 
         for (int i = 0; i < racingData.getTryCount(); i++) {
             moveCar();
-            ResultView.printSetResult(racingData, racingCars);
+            ResultView.printSetResult(racingCars);
             ResultView.lineFeed();
         }
     }
